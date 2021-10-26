@@ -1,0 +1,89 @@
+*/*reset*/
+{
+    margin: 0;
+    padding: 0;
+}
+html,body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a
+{
+    color:#fff;
+    text-decoration: none;/*diventano cliccabili*/
+}
+.btn
+{
+    display: inline-block;
+    font-size: 18px;
+    color: white;
+    background: #333;
+    padding: 10px 15px;
+    border: none;
+}
+.btn:hover
+{
+    background: rgb(201, 130, 0);;
+    color: #333;
+}
+#navbar
+{
+    background-color: #333;
+}
+#navbar .container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbar .container ul 
+{
+    display: flex; /*mette gli elementi in orizzontale*/
+    padding-right: 1rem;
+}
+#navbar .container ul li
+{
+    list-style: none;
+}
+#navbar .container ul li a
+{
+    padding: 20px;
+    display: block;
+}
+#navbar .container h1
+{
+    padding-left:1rem;
+}
+#navbar ul li a:hover,
+navbar ul li .current
+{
+    background-color: #555;
+    color:rgb(201, 130, 0);
+}
+#showcase .container
+{
+    display: flex;
+    flex-direction: column; 
+    height: 70vh;
+    background: url('../img/pane1.jpg') no-repeat center center/cover;
+    justify-content: center;
+    align-items: center;
+}
+#showcase .container h1
+{
+    color: white;
+    font-size: 40px;
+    padding-bottom: 2rem;
+}
+.color-primary
+{
+    color: rgb(201, 130, 0);
+}
+#showcase .container p
+{
+    color: white;
+    font-size: 1rem;
+    padding-bottom: 2rem;
+}
+
+
