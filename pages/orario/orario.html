@@ -1,0 +1,39 @@
+<script>
+    window.onload = setInterval(Orologio, 1000);
+    function addZero(i) {
+        if (i < 10) {
+            i = "0" + i;
+        }
+        return i;
+    }
+    function Orologio() {
+        var d = new Date();
+        var date = d.getDate();
+        var ora = addZero(d.getHours());
+        var min = addZero(d.getMinutes());
+        var sec = addZero(d.getSeconds());
+        document.getElementById("orologio").innerHTML = ora + ":" + min + ":" + sec; //assegna l'id di funzione
+    }
+</script>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Orario in tempo reale</title>
+</head>
+
+<body>
+    <!-- riga di codice HTML -->
+    <h1>Orario</h1>
+    
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    
+    <p class="watch" id="orologio"></p> <!-- mostra la funzione chiamata orologio-->
+    <a class="bottom" href="../../index.html">Clica qui se sei curioso</a>
+</body>
+
+</html>
